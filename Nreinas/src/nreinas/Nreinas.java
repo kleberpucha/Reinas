@@ -16,7 +16,7 @@ public class Nreinas {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-    System.out.println("hola N Reinas");
+    CrearTablero ct = new CrearTablero();
+    ct.dibujarTablero(4, 4, 0);
     }
-    
 }
