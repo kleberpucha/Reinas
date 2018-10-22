@@ -36,7 +36,8 @@ public class ColocarReinas {
             imprimirMatriz(a);
         }
     }
-        
+    //metodo booleano  que rrecorre la matriz para verificar si no exitiste
+    //cruces entre reinas
     private static boolean validarUbicacion(int[][] a, int i, int j) {
         boolean bandera = true;
         for(int k =0;k<a.length && bandera == true;k++){
@@ -44,6 +45,7 @@ public class ColocarReinas {
                 bandera = false;
             }
         }
+        //nos ayuda a ver si no existen reinas en diagonal
         for(int m = 0 ; m < a.length && bandera == true; m++){
             for(int n = 0;n <a.length && bandera == true; n++){
                 if(m-n == i-j && a[m][n]==1){
@@ -57,12 +59,12 @@ public class ColocarReinas {
         return bandera;
     }
         private static void imprimirMatriz(int[][] a) {
-        for(int i =0;i < a.length;i++){
-            for(int j=0;j<a.length;j++){ 
-                System.out.print(a[i][j]+" ");
+            for (int[] a1 : a) {
+                for (int j = 0; j<a.length; j++) {
+                    System.out.print(a1[j] + " ");
+                }
+                System.out.println();
             }
-            System.out.println();
-        }
         System.out.println();
     }
 }
