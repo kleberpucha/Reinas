@@ -27,6 +27,7 @@ public class Nreinas {
       //para esto enviamos la matriz a que contiene las dimenciones del tablero
       //y un 0 que reperenta la ubicacion de inicio del tablero 
       ColocarReinas cr = new ColocarReinas();
+      //llamamos al metodo colocarRreinas
       cr.colocarReinas(a, 0);
     }   
 }
